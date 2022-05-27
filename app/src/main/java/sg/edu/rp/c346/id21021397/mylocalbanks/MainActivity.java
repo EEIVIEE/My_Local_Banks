@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 return true; //menu item successfully handled
             } else if (item.getItemId() == 1) {
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + R.strSing.dbscontact));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + R.string.dbscontact));
                 startActivity(intentCall);
 
                 return true; //menu item successfully handled
@@ -69,8 +69,7 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == 0) { //check whether the selected menu item ID is 0
                 //code for action
                 Intent intentWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.ocbclink)));
-                startActivity(intentWebsite);
-
+                startActivity(intentWebsite);S
                 return true; //menu item successfully handled
             } else if (item.getItemId() == 1) {
                 //code for action
