@@ -54,13 +54,13 @@ public class MainActivity extends AppCompatActivity {
         if (item.getGroupId() == 0) {
             if (item.getItemId() == 0) { //check whether the selected menu item ID is 0
                 //code for action
-                Intent intentWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.dbs.com.sg/index/default.page"));
+                Intent intentWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.dbslink)));
                 startActivity(intentWebsite);
 
                 return true; //menu item successfully handled
             } else if (item.getItemId() == 1) {
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1800 111 1111"));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + R.string.dbscontact));
                 startActivity(intentCall);
 
                 return true; //menu item successfully handled
@@ -68,13 +68,13 @@ public class MainActivity extends AppCompatActivity {
         } else if (item.getGroupId() == 1) {
             if (item.getItemId() == 0) { //check whether the selected menu item ID is 0
                 //code for action
-                Intent intentWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ocbc.com/group/gateway.page"));
+                Intent intentWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.ocbclink)));
                 startActivity(intentWebsite);
 
                 return true; //menu item successfully handled
             } else if (item.getItemId() == 1) {
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1800 363 3333"));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + R.string.ocbccontact));
                 startActivity(intentCall);
 
                 return true; //menu item successfully handled
@@ -82,13 +82,13 @@ public class MainActivity extends AppCompatActivity {
         } else if (item.getGroupId() == 2) {
             if (item.getItemId() == 0) { //check whether the selected menu item ID is 0
                 //code for action
-                Intent intentWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=dQw4w9WgXcQ"));
+                Intent intentWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.uoblink)));
                 startActivity(intentWebsite);
 
                 return true; //menu item successfully handled
             } else if (item.getItemId() == 1) {
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1800 222 2121"));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + R.string.uobcontact));
                 startActivity(intentCall);
 
                 return true; //menu item successfully handled
@@ -111,14 +111,14 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.EnglishSelection) {
-            dbs.setText("dbs");
-            ocbc.setText("ocbc");
-            uob.setText("uob");
+            dbs.setText(R.string.dbs);
+            ocbc.setText(R.string.ocbc);
+            uob.setText(R.string.uob);
             return true;
         } else if (id == R.id.ChineseSelection) {
-            dbs.setText("星展银行");
-            ocbc.setText("华侨银行");
-            uob.setText("关于我们");
+            dbs.setText(R.string.dbschinese);
+            ocbc.setText(R.string.ocbcchinese);
+            uob.setText(R.string.uobchinese);
             return true;
         } else{
 
