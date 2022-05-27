@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sg.edu.rp.c346.id21021397.mylocalbanks">
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />S
 
     <application
         android:allowBackup="true"

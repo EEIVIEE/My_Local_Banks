@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 return true; //menu item successfully handled
             } else if (item.getItemId() == 1) {
                 //code for action
-                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + R.string.dbscontact));
+                Intent intentCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + R.strSing.dbscontact));
                 startActivity(intentCall);
 
                 return true; //menu item successfully handled
