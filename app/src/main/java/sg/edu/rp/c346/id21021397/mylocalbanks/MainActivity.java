@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == 0) { //check whether the selected menu item ID is 0
                 //code for action
                 Intent intentWebsite = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.ocbclink)));
-                startActivity(intentWebsite);S
+                startActivity(intentWebsite);
                 return true; //menu item successfully handled
             } else if (item.getItemId() == 1) {
                 //code for action
