@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyLocalBanks/app/src/main/res/drawable/dark_theme.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyLocalBanks/app/src/main/res/drawable/techy_background.xml" value="0.2595" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyLocalBanks/app/src/main/res/drawable/text_border.xml" value="0.2595" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyLocalBanks/app/src/main/res/layout/activity_main.xml" value="0.1" />
