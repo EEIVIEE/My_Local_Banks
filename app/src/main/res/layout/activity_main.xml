@@ -8,85 +8,103 @@
     android:background="@drawable/techy"
     tools:context=".MainActivity" >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.3"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_weight="0.3">
 
-        <ImageView
-            android:id="@+id/imageViewDBS"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="@string/dbs"
-            app:srcCompat="@drawable/dbsbank" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/textViewDBS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/text_border"
-            android:gravity="center"
-            android:text="@string/dbs"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.3"
-        android:gravity="center"
-        android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageViewDBS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/dbs"
+                    app:srcCompat="@drawable/dbsbank" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="@string/ocbc"
-            app:srcCompat="@drawable/ocbc" />
+                <TextView
+                    android:id="@+id/textViewDBS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"
+                    android:text="@string/dbs"
+                    android:textColor="#000000"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textViewOCBC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/text_border"
-            android:gravity="center"
-            android:text="@string/ocbc"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.3"
-        android:gravity="center"
-        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageViewUOB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="@string/uob"
-            app:srcCompat="@drawable/uob" />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/ocbc"
+                    app:srcCompat="@drawable/ocbc" />
 
-        <TextView
-            android:id="@+id/textViewUOB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/text_border"
-            android:gravity="center"
-            android:text="@string/uob"
-            android:textColor="#757575"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/textViewOCBC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"
+                    android:text="@string/ocbc"
+                    android:textColor="#000000"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewUOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/uob"
+                    app:srcCompat="@drawable/uob" />
+
+                <TextView
+                    android:id="@+id/textViewUOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"
+                    android:text="@string/uob"
+                    android:textColor="#000000"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

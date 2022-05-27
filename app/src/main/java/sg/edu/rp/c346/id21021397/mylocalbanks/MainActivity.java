@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -97,4 +98,33 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onContextItemSelected(item); //pass menu item to the superclass implementation
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here.
+        int id = item.getItemId();
+
+        if (id == R.id.EnglishSelection) {
+            dbs.setText("dbs");
+            ocbc.setText("ocbc");
+            uob.setText("uob");
+            return true;
+        } else if (id == R.id.ChineseSelection) {
+            dbs.setText("星展银行");
+            ocbc.setText("华侨银行");
+            uob.setText("关于我们");
+            return true;
+        } else{
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }
